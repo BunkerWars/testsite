@@ -12,13 +12,17 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
+            color: black;
+            background-color: #f8fafd;
+        }
+
+        strong {
+            color: #00388c;
         }
 
         a {
             font-weight: bold;
-            color: #1a73e8;
+            color: #ffc100;
             text-decoration: none;
         }
 
@@ -26,57 +30,128 @@
             text-decoration: underline;
         }
 
-        /* Header Styles */
-        .header {
-            background-color: #fff;
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
+        /* Responsive Font Sizes with Font Weights */
+        h1, h2, h3, h4 {
+            color: #00388c;
         }
 
-        .header h1 {
+        h1 {
             font-family: 'Squada One', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin: 0;
-            color: #333;
-        }
-
-        /* Container */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h2, h3 {
-            color: #333;
-        }
-
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
+            font-size: 10vw;
+            font-weight: 700; /* Bold */
+            line-height: 1.2;
             margin-bottom: 20px;
         }
 
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 15px;
+        h2 {
+            font-size: 9vw;
+            font-weight: 700; /* Semi-Bold */
+            line-height: 1.3;
+            margin-bottom: 18px;
         }
 
+        h3 {
+            font-size: 8vw;
+            font-weight: 500; /* Medium */
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+
+        h4 {
+            font-size: 4vw;
+            font-weight: 400; /* Normal */
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+
+        /* Media Queries for finer control */
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 50px;
+                font-weight: 700; /* Bold */
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-weight: 600; /* Semi-Bold */
+                line-height: 1.3;
+                margin-bottom: 18px;
+            }
+
+            h3 {
+                font-size: 30px;
+                font-weight: 500; /* Medium */
+                line-height: 1.4;
+                margin-bottom: 16px;
+            }
+
+            h4 {
+                font-size: 20px;
+                font-weight: 400; /* Normal */
+                line-height: 1.5;
+                margin-bottom: 14px;
+            }
+        }
+
+        /* Additional Spacing */
         p {
-            margin-bottom: 15px;
-            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Specific Styles for the Page */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: #f5f5f5;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Remove bullet points */
+        .content ul {
+            list-style-type: none
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .content ul li {
+           list-style-type: none;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .content ul li::before {
+             list-style-type: none;
+            position: absolute;
+            left: 0;
+            color: #00388c;
         }
 
         /* Card Styles */
         .card {
-            background: #fff;
+            background: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 20px;
@@ -85,85 +160,69 @@
         }
 
         .card h3 {
+            font-size: 24px;
             margin-top: 0;
+            color: #00388c;
         }
 
         .card ul {
-            list-style-type: none;
-            padding-left: 0;
+            padding-left: 20px;
             margin: 0;
         }
 
         .card ul li {
             margin-bottom: 10px;
-            padding-left: 0;
+            position: relative;
+            padding-left: 20px;
         }
 
-        .contact-info {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f1f3f4;
-            border-radius: 8px;
-        }
-
-        .contact-info p {
-            margin: 0;
-        }
-
-        /* Responsive Image */
-        .responsive-img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+        .card ul li::before {
+             list-style-type: none;
+            position: absolute;
+            left: 0;
+            color: #00388c;
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>Problem Preventer's Promise</h1>
-</div>
-
 <div class="container">
-    <h2>Keep Cool This Summer with The Problem Solvers in San Antonio, TX</h2>
-    <p>As the summer heat sets in, it's crucial to make sure your AC is functioning at its best. At The Problem Solvers, we understand the importance of a reliable air conditioning system to keep your home cool and comfortable. We're excited to introduce our Problem Preventer's Promise – a comprehensive AC service in San Antonio designed to keep your AC in top shape and prevent costly repairs.</p>
-    <h2>As Seen on Great Day SA</h2>
-    <p>Great Day SA is a popular local TV show in San Antonio that highlights businesses, events, and services that matter to the community. We were recently featured on Great Day SA, where we discussed common AC issues and our comprehensive Problem Preventer's Promise service. Watch our segment to learn more about how we can help you stay cool this summer. For more information about Great Day SA, visit their <a href="https://www.kens5.com/greatday" target="_blank">Great Day SA</a>.</p>
-    
-    <div data-environment="win|android|ios|chromeOS|unknown,ALL,ALL" class="environment environment--active">
-      <img class="responsive-img" src="https://www.google.com/chrome/static/images/whats-new/125/win/review-privacy.webp" alt="Chrome Safety Check runs in the background to check for privacy and security issues, then displays your safety status and any relevant recommendations to improve your safety.">
+    <div class="hero">
+        <h1>Problem Preventer's Promise</h1>
     </div>
-    
-    <h2>Common AC Problems and Our Solutions</h2>
-    <div class="card">
-        <h3>The Three Major Issues:</h3>
-        <ul>
-            <li><strong>Dirt:</strong> Dirty air filters, blower wheels, and coils can severely impact your AC's efficiency.</li>
-            <li><strong>Water Leaks:</strong> Leaks can cause significant damage and reduce your system's performance.</li>
-            <li><strong>Freon Leaks:</strong> Low refrigerant levels can prevent your AC from cooling effectively.</li>
-        </ul>
-    </div>
-    <div class="card">
-        <h3>Our Comprehensive Service Includes:</h3>
-        <ul>
-            <li><strong>Thorough Inspection:</strong> We meticulously inspect your entire AC system.</li>
-            <li><strong>Factory Refresh:</strong> We clean and tune up your system, ensuring it runs like new.</li>
-            <li><strong>CleanGuard Disinfectant:</strong> Applied to indoor equipment to kill bacteria and mold, preventing bad odors.</li>
-            <li><strong>Freon Level Check and Top-off:</strong> We ensure your refrigerant levels are optimal for peak performance.</li>
-        </ul>
-    </div>
-    <h2>Special Offer for San Antonio Residents</h2>
-    <p>We're offering our Problem Preventer's Promise – a $377 value – for just $188 to all our Great Day SA audience members. This special promotion is our way of ensuring you stay cool this summer without breaking the bank. Take advantage of this limited-time offer for the best AC service in San Antonio.</p>
-    <h2>Why Choose The Problem Solvers?</h2>
-    <h3>Expert Technicians</h3>
-    <p>Our team is experienced and dedicated to providing top-notch AC service in San Antonio.</p>
-    <h3>Local Business</h3>
-    <p>Proudly serving the San Antonio community with reliable HVAC solutions.</p>
-    <h3>Customer Satisfaction</h3>
-    <p>We prioritize your comfort and satisfaction.</p>
-    <h2>Contact Us Today!</h2>
-    <div class="contact-info">
+    <div class="content">
+        <h2>Keep Cool This Summer with The Problem Solvers in San Antonio, TX</h2>
+        <p>As the summer heat sets in, it's crucial to make sure your AC is functioning at its best. At The Problem Solvers, we understand the importance of a reliable air conditioning system to keep your home cool and comfortable. We're excited to introduce our Problem Preventer's Promise – a comprehensive AC service in San Antonio designed to keep your AC in top shape and prevent costly repairs.</p>
+        <h2>As Seen on Great Day SA</h2>
+        <p>Great Day SA is a popular local TV show in San Antonio that highlights businesses, events, and services that matter to the community. We were recently featured on Great Day SA, where we discussed common AC issues and our comprehensive Problem Preventer's Promise service. Watch our segment to learn more about how we can help you stay cool this summer. For more information about Great Day SA, visit their <a href="https://www.kens5.com/greatday" target="_blank">Great Day SA</a>.</p>
+        <h2>Common AC Problems and Our Solutions</h2>
+        <div class="card">
+            <h3>The Three Major Issues:</h3>
+            <ul>
+                <li><strong>Dirt:</strong> Dirty air filters, blower wheels, and coils can severely impact your AC's efficiency.</li>
+                <li><strong>Water Leaks:</strong> Leaks can cause significant damage and reduce your system's performance.</li>
+                <li><strong>Freon Leaks:</strong> Low refrigerant levels can prevent your AC from cooling effectively.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Our Comprehensive Service Includes:</h3>
+            <ul>
+                <li><strong>Thorough Inspection:</strong> We meticulously inspect your entire AC system.</li>
+                <li><strong>Factory Refresh:</strong> We clean and tune up your system, ensuring it runs like new.</li>
+                <li><strong>CleanGuard Disinfectant:</strong> Applied to indoor equipment to kill bacteria and mold, preventing bad odors.</li>
+                <li><strong>Freon Level Check and Top-off:</strong> We ensure your refrigerant levels are optimal for peak performance.</li>
+            </ul>
+        </div>
+        <h2>Special Offer for San Antonio Residents</h2>
+        <p>We're offering our Problem Preventer's Promise – a $377 value – for just $188 to all our Great Day SA audience members. This special promotion is our way of ensuring you stay cool this summer without breaking the bank. Take advantage of this limited-time offer for the best AC service in San Antonio.</p>
+        <h2>Why Choose The Problem Solvers?</h2>
+        <h3>Expert Technicians</h3>
+        <p>Our team is experienced and dedicated to providing top-notch AC service in San Antonio.</p>
+        <h3>Local Business</h3>
+        <p>Proudly serving the San Antonio community with reliable HVAC solutions.</p>
+        <h3>Customer Satisfaction</h3>
+        <p>We prioritize your comfort and satisfaction.</p>
+        <h2>Contact Us Today!</h2>
         <p>Don't wait until the summer heat hits hard. Ensure your AC is ready to keep you cool. Call us at <a href="tel:2108996319">210-899-6319</a> or fill out our form to schedule your AC service in San Antonio today.</p>
     </div>
 </div>
